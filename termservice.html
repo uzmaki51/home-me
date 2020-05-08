@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+    <!-- メタエリアここから -->
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/common/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!-- メタエリアここまで -->
+    <!-- タイトルここから -->
+    <title>HOMEME</title>
+    <!-- タイトルここまで -->
+    <!-- スタイルシート読み込み -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <!-- JS読み込み -->
+    <script src="./js/jquery-1.11.2.min.js"></script>
+    <script src="./js/setup.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+    <script src="./js/slideSetting.js"></script>
+    <script src="./js/jquery.matchHeight.js"></script>
+    <!--[if lt IE 9]（編集不可領域）-->
+    <script src="./js/html5shiv.js"></script>
+    <script src="./js/selectivizr.js"></script>
+    <script src="./js/respond.js"></script>
+    <script>
+        function openNav() {            
+            if (screen.width > 1100)
+                document.getElementById("sidebar").style.width = "450px";
+            else
+                document.getElementById("sidebar").style.width = "50%";
+        }
+
+        function closeNav() {
+            document.getElementById("sidebar").style.width = "0";
+        }
+    </script>
+</head>
+
+<body>
+    <article id="wrapper">
+        <section id="section-body">
+            <div id="sidebar" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="nav-group">
+                    <a href="./index.html" class="nav-menu">TOP</a>
+                    <a href="./philosophy.html" class="nav-menu">私たちの理念</a>
+                    <a href="./termservice.html" class="nav-menu">利用規約</a>
+                    <a href="./recruit.html" class="nav-menu">ホメスタッフ募集</a>
+                    <a href="https://reserva.be/homemee/contact?mode=edit" class="nav-menu">お問い合わせ</a>     
+                </div>
+                <div class="social">
+                    <a href="#" style="display:inline"><img src="./images/common/twitter.png"></a>
+                    <a href="#" style="display:inline"><img src="./images/common/facebook.png"></a>
+                    <a href="#" style="display:inline"><img src="./images/common/instagram.png"></a>
+                </div>            
+            </div>
+            <div class="header">
+                <div class="nav-btn"><a href="#" onclick="openNav()"><img src="./images/common/nav_btn.png"></a></div>
+                <div class="top-btn-group">
+                    <div class="top-btn-reservation"><a href="https://reserva.be/homemee/">WEB予約はこちら</a></div>
+                    <div class="top-btn-question"><a href="https://reserva.be/homemee/contact?mode=edit">お問い合わせ</a></div>
+                </div>
+            </div>
+            <div class="page-title">
+                <img src='./images/term_service.png'>
+                <div class="main-title">利用規約</div>
+            </div>
+            <div class="main-comment text-center">当サービスはあなたのがんばっていることを伺い専任のスタッフが褒める通話型サービスです。</br>
+                あなたのがんばっていること、成功談、自慢をお話し下さい。</br>
+                但しこの様な方はいらっしゃないとは思いますが以下の内容のお話はお控え下さいます様お願い申し上げます。
+            </div>
+            <div class="main-comment-2">
+                <ul style="flex-direction: row">
+                    <li>・宗教的、政治的、歴史的な内容を含むもの</li>
+                    <li>・人の生死や過激過ぎる批判めいた内容</li>
+                    <li>・法律に触れるような内容</li>
+                    <li>・スタッフを批判したり罵倒したりすること</li>
+                </ul>
+            </div>
+            <div class="main-comment text-center pb100 mb0">以上の内容が確認された場合は、サービスを中止させて頂くことがございます。</br>
+                何卒ご了承の程よろしくお願い申し上げます。
+            </div>
+        </section>
+        <section id="section-body10">
+            <div class="page-title">
+                <img src='./images/privacy_policy.png'>
+                <div class="main-title">プライバシーポリシー</div>
+            </div>
+            <div class="main-comment-3 mb0 pb120">
+            第1条（個人情報）</br>
+「個人情報」とは，個人情報保護法にいう「個人情報」を指すものとし，生存する個人に関する情報であって，当該
+情報に含まれる氏名，電話番号，連絡先その他の記述等により特定の個人を識別できる情報などの当該情報単体から
+特定の個人を識別できる情報（個人識別情報）を指します。</br>
+</br>
+第2条（個人情報の収集方法）</br>
+当社は，ユーザーが当サービスをご利用する際に氏名，電話番号，メールアドレス，クレジットカード番号などの個
+人情報をお尋ねします。</br>
+</br>
+第3条（個人情報を利用する目的）</br>
+当社が個人情報を収集・利用する目的は，以下のとおりです。</br>
+・当社サービスの提供・運営のため</br>
+・ユーザーからのお問い合わせに回答するため（本人確認を行うことを含む）</br>
+・ユーザーが利用中のサービスの新機能，更新情報，キャンペーン等及び当社が提供する他のサービスの案内のメー
+ルを送付するため</br>
+・メンテナンス，重要なお知らせなど必要に応じたご連絡のため</br>
+・利用規約に違反したユーザーや，不正・不当な目的でサービスを利用しようとするユーザーの特定をし，ご利用を
+お断りするため</br>
+・ユーザーにご自身の登録情報の閲覧や変更，削除，ご利用状況の閲覧を行っていただくため</br>
+・有料サービスにおいて，ユーザーに利用料金を請求するため</br>
+・上記の利用目的に付随する目的</br>
+</br>
+第4条（利用目的の変更）</br>
+・当社は，利用目的が変更前と関連性を有すると合理的に認められる場合に限り，個人情報の利用目的を変更するものとします。</br>
+・利用目的の変更を行った場合には，変更後の目的について，当社所定の方法により，ユーザーに通知し，または本ウェブサイト上に公表するものとします。</br>
+</br>
+第5条（個人情報の第三者提供）</br>
+・当社は，あらかじめユーザーの同意を得ることなく，第三者に個人情報を提供することはありません。</br>
+</br>
+第6条（個人情報の開示）</br>
+・当社は，本人から個人情報の開示を求められたときは，本人に対し，遅滞なくこれを開示します。</br>
+</br>
+第7条（個人情報の訂正および削除）</br>
+・ユーザーは，当社の保有する自己の個人情報が誤った情報である場合には，当社が定める手続きにより，当社に対
+して個人情報の訂正，追加または削除（以下，「訂正等」といいます。）を請求することができます。</br>
+・当社は，ユーザーから前項の請求を受けてその請求に応じる必要があると判断した場合には，遅滞なく，当該個人
+情報の訂正等を行うものとします。</br>
+・当社は，前項の規定に基づき訂正等を行った場合，または訂正等を行わない旨の決定をしたときは遅滞なく，これ
+をユーザーに通知します。</br>
+</br>
+第8条（プライバシーポリシーの変更）</br>
+・本ポリシーの内容は，法令その他本ポリシーに別段の定めのある事項を除いて，ユーザーに通知することなく，変
+更することができるものとします。</br>
+・当社が別途定める場合を除いて，変更後のプライバシーポリシーは，本ウェブサイトに掲載したときから効力を生
+じるものとします。</br>
+            </div>
+        </section>
+        <section id="section-footer">
+            <div>copyright  homeme. All Rights Reserved.</div>
+        </section>
+    </article>
+</body>
+</html>

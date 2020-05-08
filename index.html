@@ -1,0 +1,665 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+    <!-- メタエリアここから -->
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/common/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!-- メタエリアここまで -->
+    <!-- タイトルここから -->
+    <title>HOMEME</title>
+    <!-- タイトルここまで -->
+    <!-- スタイルシート読み込み -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <!-- JS読み込み -->
+    <script src="./js/jquery-1.11.2.min.js"></script>
+    <script src="./js/setup.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+    <script src="./js/slideSetting.js"></script>
+    <script src="./js/jquery.matchHeight.js"></script>
+    <!--[if lt IE 9]（編集不可領域）-->
+    <script src="./js/html5shiv.js"></script>
+    <script src="./js/selectivizr.js"></script>
+    <script src="./js/respond.js"></script>
+    <script>
+        function openNav() {            
+            if (screen.width > 1100)
+                document.getElementById("sidebar").style.width = "450px";
+            else
+                document.getElementById("sidebar").style.width = "50%";
+        }
+
+        function closeNav() {
+            document.getElementById("sidebar").style.width = "0";
+        }
+    </script>
+</head>
+
+<body>
+    <article id="wrapper">
+        <section id="section-body-top">
+            <div class="header">            
+                <div id="sidebar" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="nav-group">
+                        <a href="./index.html" class="nav-menu">TOP</a>
+                        <a href="./philosophy.html" class="nav-menu">私たちの理念</a>
+                        <a href="./termservice.html" class="nav-menu">利用規約</a>
+                        <a href="./recruit.html" class="nav-menu">ホメスタッフ募集</a>
+                        <a href="https://reserva.be/homemee/contact?mode=edit" class="nav-menu">お問い合わせ</a>    
+                    </div>
+                    <div class="social">
+                        <a href="#" style="display:inline"><img src="./images/common/twitter.png"></a>
+                        <a href="#" style="display:inline"><img src="./images/common/facebook.png"></a>
+                        <a href="#" style="display:inline"><img src="./images/common/instagram.png"></a>
+                    </div>            
+                </div>
+                <div class="nav-btn">
+                    <a href="javascript:void(0)" onclick="openNav()"><img src="./images/common/nav_btn.png"></a>
+                </div>    
+                <div class="top-btn-group">
+                    <div class="top-btn-reservation"><a href="https://reserva.be/homemee/">WEB予約はこちら</a></div>
+                    <div class="top-btn-question"><a href="https://reserva.be/homemee/contact?mode=edit">お問い合わせ</a></div>
+                </div>
+            </div>   
+            <img src="./images/header-4.png" class="top-logo-back">
+            <div class="logo-1 text-center pt20">ただただあなたをホメまくるだけの通話型サービス</div>
+            <div class="logo-2 text-center pb10"><img src="./images/common/logo.png"></div>
+            <div class="top-logo-1 text-center pt100">   
+                <span>わたし達があなたをとことん</span>  
+            </div>
+            <div class="top-logo-2 text-center pt30">
+                <span>ホメまくります</span>
+            </div>
+            <div class="top-logo-3 text-center pt50">
+                <span>たくさん自慢してください！</span>
+            </div>         
+        </section>
+        <section id="section-top-menu">
+            <div>
+                <div class="sp-btn-reservation"><a href="https://reserva.be/homemee/">WEB予約はこちら</a></div>
+                <div class="sp-btn-question"><a href="https://reserva.be/homemee/contact?mode=edit">お問い合わせ</a></div>
+            </div>
+        </section>
+        <section id="section-about">
+            <div class="page-title">
+                <img src='./images/about.png'>
+                <div class="main-title">
+                    <span class="title-1">ホメミー</span>
+                    <span class="title-2">とは?</span>
+                </div>
+            </div>
+            <div class="main-comment-3 pt20 pb80">
+                ホメミー(意味:わたしをホメて！)とは、あなたの頑張っていることや自慢したいことをとことん話し
+                て頂き、プロのホメスタッフが、頑張っているあなとのことをホメてホメてホメまくるだけの通話型
+                サービスです！</br>
+                あなたは誰よりも世の為人の為に頑張っているのだからもっともっとたくさんホメられるべき！</br>
+                あなたがどのようにすごいのか、あなたはどれだけ価値のあることをしているのか、わたし達があな
+                たをホメてホメてホメまくります！</br>
+            </div>
+            <div class="about-img-group">
+                <div class="about-img pb30">
+                    <img src="./images/top/top-1.png">
+                    <p class="small-title pt10">毎日家事育児に奮闘中の私を</p>
+                    <p class="big-title">もっとホメて！</p>
+                </div>
+                <div class="about-img pb30">
+                    <img src="./images/top/top-2.png">
+                    <p class="small-title pt10">忙しくて仕事を頑張った私を</p>
+                    <p class="big-title">もっとホメて！</p>
+                </div>
+                <div class="about-img pb30">
+                    <img src="./images/top/top-3.png">
+                    <p class="small-title pt10">人間関係を頑張ってる私を</p>
+                    <p class="big-title">もっとホメて！</p>
+                </div>
+                <div class="about-img pb30">
+                    <img src="./images/top/top-4.png">
+                    <p class="small-title pt10">彼のことを自慢したい</p>
+                    <p class="big-title">もっとホメて！</p>
+                </div>
+                <div class="about-img pb30">
+                    <img src="./images/top/top-5.png">
+                    <p class="small-title pt10">ダイエット頑張って痩せた私を</p>
+                    <p class="big-title">もっとホメて！</p>
+                </div>
+                <div class="about-img pb30">
+                    <img src="./images/top/top-6.png">
+                    <p class="small-title pt10">可愛いアイテムをゲットした私を</p>
+                    <p class="big-title">もっとホメて！</p>
+                </div>
+            </div>
+            <div class="about-block mt30">
+                <p class="about-block-text">目標が達成できた！　ビジネスが成功した！ <br class="text-break">仕事と家事を両立している！　介護を頑張った！<br/>
+                子供がテストを頑張った！　相談に乗って助けてあげた！ <br class="text-break">臨時収入があった！　好きな人と付き合った！ect...</p>
+            </div>
+            <div class="logo-1 text-center mt20 mb60">そのほか些細なことでもどんどん自慢してください！</div>
+        </section>
+        <section id="section-service">
+            <div class="page-title">
+                <img src='./images/servise.png'>
+                <div class="main-title">使い方はかんたん3種類！</div>
+            </div>
+            <div class="service-img-group">
+                <div class="service-img pb30">
+                    <img src="./images/top/top-7.png">
+                    <div class="small-title">
+                        <p class="big-title">LINE通話</p>
+                        <p class="service-comment">
+                            とりあえずかんたんに始めたい方はこちら！ご予約の際にLINE IDをお知らせしますので、
+                            予約開始時間になりましたらLINE(音声通話orビデオ通話)にてお電話くださいませ！
+                        </p>
+                    </div>
+                </div>
+                <div class="service-img pb30">
+                    <img src="./images/top/top-8.png">
+                    <div class="small-title">
+                        <p class="big-title">お電話</p>
+                        <p class="service-comment">
+                            LINEのIDを知られたくない方はこちら！ご予約の際に電話番号をお知らせしますので、
+                            予約開始時間になりましたらお電話くださいませ！※非通知でも可
+                        </p>
+                    </div>
+                </div>
+                <div class="service-img pb30">
+                    <img src="./images/top/top-9.png">
+                    <div class="small-title">
+                        <p class="big-title">サロンで対面</p>
+                        <p class="service-comment">
+                            ホメスタッフと実際にお会いして対面でのお話をご希望の方はこちら！
+                            渋谷区神宮前2丁目にあるサロンです。ご予約の際にご住所をお知らせ致します！(別途サロン使用料をお願い申し上げます。)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="service-block wd80">                    
+                    <div class="service-no">
+                        <p>1</p>
+                    </div>
+                    <p>web予約フォームまたはお電話にてご希望の日程・ご利用方法・お客様情報・お支払い情報をご入力ください。こちらからLINEIDまたは電話番号またはサロンご住所をお知らせさせて頂きますのでご予約されたお時間になりましたらお電話くださいませ！(対面の際はサロンへお越しください！)</p>
+                </div>
+            </div>
+            <div>
+                <div class="service-block-dot">
+                </div>
+            </div>
+            <div>
+                <div class="service-block wd80">
+                    <div class="service-no">
+                        <p>2</p>
+                    </div>
+                    <p>時間スタートと同時に、家事育児・仕事・勉強・人間関係などなどあなたの頑張っていることや、ルックス・ファッション・恋愛・彼氏彼女のこと・趣味のことなどなど自慢したいことを遠慮せずどしどしホメスタッフお話しください♪</p>
+                </div>
+            </div>
+            <div>
+                <div class="service-block-dot">
+                </div>
+            </div>
+            <div>
+                <div class="service-block wd80">
+                    <div class="service-no">
+                        <p>3</p>
+                    </div>
+                    <p>人生経験豊富なホメスタッフがあなたの素晴らしいことをただただホメてホメてホメまくります！あなたに共感し、あなたの頑張っていることが世の為人の為、社会の為に貢献していることを再確認して頂きます♪頑張るってどんなことでもスゴイことなんです！</p>
+                </div>
+            </div>
+        </section>
+        <section id="section-stuff">
+            <div class="page-title">
+                <img src='./images/stuff.png'>
+                <div class="main-title">ホメスタッフについて</div>
+            </div>          
+            <div class="main-comment-3">
+                <span class="special-main-comment">ホメミーのホメスタッフはみんな優しくておだやか♪更に人生経験豊富で話を聞くことが大好き！</br>
+                あなたのすごいところをわかりやすくありのままにお伝えします！</br>
+                「初めて話す人にわかるの？」なんて思わないで下さいね！ホメスタッフもみんな頑張ってきた人の集団です。</br>
+                頑張ってるあなたと同じ立場だからこそ、それってすごいことですよ！！って共感できるんです。</br>
+                恥ずかしがらず！遠慮なく！大げさに！あなたの自慢を何でもお気軽にお聞かせくださいね！</span></br>
+                </br>
+                <span class="special-comment">※予約フォームで記入して頂くお話し内容によってあなたに合ったホメスタッフを配置させて頂きます。</span>
+            </div>
+            <div class="stuff-img-group">
+                <div class="stuff-block mb20">
+                    <div class="person-img">                        
+                        <img src="./images/top/person-1.png">
+                        <div class="person-name">ゆみ<br class="text-break">(45歳)</div>
+                    </div>
+                    <div class="person-info wd60">
+                        <div class="person-contact pb20">
+                            出身地：福岡県</br>
+                            職業：主婦</br>
+                            趣味：料理、ヨガ</br>
+                            ステータス：</br>
+                            2人のお子様を育て上げました！</br>
+                        </div>
+                        <div class="person-dot"></div>
+                        <div class="person-comment">
+                            22歳と19歳の子供が2人います。まだ子供が小さい頃は育児に追われ大変な日々でしたが自分の子育ての経験を生かして、一人でも多くの子育てに悩むママ達に共感してあげたいです。
+                            自分らしく楽しく子育てができるようにお話を聞きたいです！毎日家事育児をこんなに頑張ってるってどんどん自慢して下さいね！
+                        </div>
+                    </div>
+                </div>
+                <div class="stuff-block mb20">
+                    <div class="person-img">                        
+                        <img src="./images/top/person-2.png">
+                        <div class="person-name">みほ<br class="text-break">(30歳)</div>
+                    </div>
+                    <div class="person-info wd60">
+                        <div class="person-contact pb20">
+                            出身地：静岡県</br>
+                            職業：接客業</br>
+                            趣味：旅行、ジムに行くこと</br>
+                            ステータス：</br>
+                            接客業でたくさんの人と接してきました!</br>
+                        </div>
+                        <div class="person-dot"></div>
+                        <div class="person-comment">
+                            接客業を通してたくさんの方と接してお話を聞いてきました。</br>
+                            学生時代から聞くことが好きで人の良いところをホメるのが好きでした。</br>
+                            あなたのことをたくさん理解してたくさんホメて少しでもお力になれたら嬉しいです！</br>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stuff-block mb20">
+                    <div class="person-img">                        
+                        <img src="./images/top/person-3.png">
+                        <div class="person-name">りゅうすけ<br class="text-break">(47歳)</div>
+                    </div>
+                    <div class="person-info wd60">
+                        <div class="person-contact pb20">
+                            出身地：青森県</br>
+                            職業：自営業</br>
+                            趣味：ドライブ、ゴルフ</br>
+                            ステータス：</br>
+                            自営業で多くの社員をホメてきました。</br>
+                        </div>
+                        <div class="person-dot"></div>
+                        <div class="person-comment">
+                            会社の経営をしているのでたくさんの社員をホメて育てることが好きです。</br>
+                            仕事を通して会社の為に社会の為に頑張っていることはすごい社会貢献なんだよと気付いてほしいです。</br>
+                            今までの経験を生かしてたくさんの方を笑顔にしたいです！</br>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stuff-block mb20">
+                    <div class="person-img">                        
+                        <img src="./images/top/person-4.png">
+                        <div class="person-name">あゆみ<br class="text-break">(25歳)</div>
+                    </div>
+                    <div class="person-info wd60">
+                        <div class="person-contact pb20">
+                            出身地：北海道</br>
+                            職業：アパレル</br>
+                            趣味：登山、アウトドア</br>
+                            ステータス：</br>
+                            アパレル販売員に5年従事したくさんの</br>
+                            お客様をホメてきました！。</br>
+                        </div>
+                        <div class="person-dot"></div>
+                        <div class="person-comment">
+                            人と接することが好きでアパレル販売員になりました！</br>
+                            お客様に似合う洋服を一緒に選んで笑顔になって頂く事に喜びを感じます！</br>
+                            私自身も家庭環境や色々な経験をしてきたので！</br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stuff-block mb20">
+                    <div class="person-img">                        
+                        <img src="./images/top/person-5.png">
+                        <div class="person-name">ゆい<br class="text-break">(24歳)</div>
+                    </div>
+                    <div class="person-info wd60">
+                        <div class="person-contact pb20">
+                            出身地：神奈川県</br>
+                            職業：医療関係</br>
+                            趣味：カフェ巡り</br>
+                            ステータス：</br>
+                            片親で育ち苦労しましたが思いやりは</br>
+                            あると自負しています(^^)</br>
+                        </div>
+                        <div class="person-dot"></div>
+                        <div class="person-comment">
+                            やっぱり頑張った分ホメてもらえるのって嬉しいですよね！</br>
+                            仕事関係や友達が20代の人も多いので若い方のお話も聞いてみたいです！</br>
+                            ハッピーな話を聞くのは好きなのでどんどん自慢してください！</br>
+                        </div>
+                    </div>
+                </div>
+                <div class="stuff-block mb20 sp-invisible">
+                    <div class="person-img">                        
+                        <img src="./images/top/person-6.png">
+                        <div class="person-name">まき<br class="text-break">(39歳)</div>
+                    </div>
+                    <div class="person-info wd60">
+                        <div class="person-contact pb20">
+                            出身地：東京都</br>
+                            職業：接客業</br>
+                            趣味：読書</br>
+                            ステータス：</br>
+                            ヨガを通してたくさんの方の健康と</br>
+                            メンタルをサポートしてきました！</br>
+                        </div>
+                        <div class="person-dot"></div>
+                        <div class="person-comment">
+                            ヨガインストラクターとして培ったつながりの大切さやたくさんの生徒さんの成長を見てきた経験を生かしたいです。</br>
+                            がんばってるあなたを応援して、ヨガレッスンと同じ様に心身の緊張をほぐし心の安定とやすらぎを得てほしいです！</br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stuff-block mb20 sp-invisible">
+                    <div class="person-img">                        
+                        <img src="./images/top/person-7.png">
+                        <div class="person-name">かなこ<br class="text-break">(43歳)</div>
+                    </div>
+                    <div class="person-info wd60">
+                        <div class="person-contact pb20">
+                            出身地：神奈川県</br>
+                            職業：医療関係</br>
+                            趣味：カフェ巡り</br>
+                            ステータス：</br>
+                            片親で育ち苦労しましたが思いやりは</br>
+                            あると自負しています(^^)</br>
+                        </div>
+                        <div class="person-dot"></div>
+                        <div class="person-comment">
+                            もともと悩み相談を受けることが多く、人の役に立てることが自分の使命だと思ってカウンセラーをしています！</br>
+                            人をホメることって自分にとってもエネルギーチャージできるので、あなたの頑張りをたくさん聞かせて下さいね！</br>
+                        </div>
+                    </div>
+                </div>
+                <div class="stuff-block mb20 sp-invisible">
+                    <div class="person-img">                        
+                        <img src="./images/top/person-8.png">
+                        <div class="person-name">さなえ<br class="text-break">(50歳)</div>
+                    </div>
+                    <div class="person-info wd60">
+                        <div class="person-contact pb20">
+                            出身地：宮城県</br>
+                            職業：ピアノ講師</br>
+                            趣味：旅行、美食巡り、スイーツ巡り</br>
+                            ステータス：</br>
+                            ピアノレッスンを通してたくさんの</br>
+                            生徒さんをホメて伸ばしてきました！</br>
+                        </div>
+                        <div class="person-dot"></div>
+                        <div class="person-comment">
+                            とりあえずかんたんに始めたい方はこちら！ご予約の際にLINE IDをお知らせしますので、予約開始時間になりましたらLINE(音声通話orビデオ通話)にてお電話くださいませ！
+                        </div>
+                    </div>
+                </div>
+                <div class="stuff-block mb20 sp-invisible">
+                    <div class="person-img">                        
+                        <img src="./images/top/person-9.png">
+                        <div class="person-name">きょうこ<br class="text-break">(45歳)</div>
+                    </div>
+                    <div class="person-info wd60">
+                        <div class="person-contact pb20">
+                            出身地：長崎県</br>
+                            職業：主婦</br>
+                            趣味：買い物、ジム</br>
+                            ステータス：</br>
+                            シングルマザーでお子様を育ててきました!</br>
+                        </div>
+                        <div class="person-dot"></div>
+                        <div class="person-comment">
+                            大学生の子供がいます。時間的にも余裕ができてきたので私の経験を生かしてお力になれれば幸いです。</br>
+                            私も自分なりに頑張ってきたつもりなので、主婦や社会で頑張っている同じ境遇の方に共感したいです！</br>
+                        </div>
+                    </div>
+                </div>
+                <div class="stuff-block mb20 sp-invisible">
+                    <div class="person-img">                        
+                        <img src="./images/top/person-10.png">
+                        <div class="person-name">さとる<br class="text-break">(39歳)</div>
+                    </div>
+                    <div class="person-info wd60">
+                        <div class="person-contact pb20">
+                            出身地：千葉県</br>
+                            職業：管理職</br>
+                            趣味：ボルダリング</br>
+                            ステータス：</br>
+                            管理職を経験し部下の成長をみてきました。</br>
+                        </div>
+                        <div class="person-dot"></div>
+                        <div class="person-comment">
+                            もともと人と接するのが好きで、現在管理職を担っている為ホメて伸ばして部下が成長するのを見ているのが生きがいです!</br>
+                            もっともっと自分のがんばったことを胸を張って言える社会になっていけばと思っています！
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="stuff-btn mt50 text-center"><a href="#">もっと見る</a></div>
+            <div class="stuff-members-cnt mt50 text-center">ホメスタッフ<span>37名</span>在籍 </div>
+            <div class="stuff-members-date text-center">(2020.3.1現在)</div>        
+            <div class="stuff-members-title text-center mt20 pb70">
+                みんなおおらかで癒し系のスタッフばかりです！</br>
+                とても話しやすいスタッフばかりなので、どんな些細な自慢でもお気軽にご利用くださいませ！</br>
+            </div>               
+        </section>
+        <section id="section-price">
+            <div class="page-title">
+                <img src='./images/price.png'>
+                <div class="main-title">料金</div>
+            </div>
+            <div class="price-group">
+                <div class="price-block">
+                    <div class="price-try"></div>
+                    <div class="price-main-block">
+                        <div class="price-time">10分</div>
+                        <div class="price-purchase">
+                            <div class="price-value">1,500円</div>
+                        </div>
+                        <div class="price-button"><a href="https://reserva.be/homemee/reserve?mode=service_staff&search_evt_no=52eJwzMjEzNDACAAQzATA&simple=1">予約する</a></div>
+                    </div>
+                </div>
+                <div class="price-block">
+                    <div class="price-main-block">
+                        <div class="price-time">20分</div>
+                        <div class="price-purchase">
+                            <div class="price-value">3,000円</div>
+                        </div>
+                        <div class="price-button"><a href="https://reserva.be/homemee/reserve?mode=service_staff&search_evt_no=10eJwzMjEzNDAGAAQ0ATE&simple=1">予約する</a></div>
+                    </div>
+                </div>
+                <div class="price-block">
+                    <div class="price-main-block">
+                        <div class="price-time">30分</div>
+                        <div class="price-purchase">
+                            <div class="price-value">4,500円</div>
+                        </div>
+                        <div class="price-button"><a href="https://reserva.be/homemee/reserve?mode=service_staff&search_evt_no=25eJwzMjEzNDAHAAQ4ATU&simple=1">予約する</a></div>
+                    </div>
+                </div>
+            </div>    
+            <div class="price-comment text-center">※税別の価格となります</div>   
+        </section>
+        <section id="section-voice">
+            <div class="page-title">
+                <img src='./images/voice.png'>
+                <div class="main-title">お客様の声</div>
+            </div>
+            <div class="voice-group">
+                <div class="voice-block voice-right">
+                    <div class="voice-face">
+                        <img src="./images/top/voice_person2.png">
+                    </div>
+                    <div class="voice-message">
+                        <div class="message-tag-right">
+                            <img src="./images/top/message-tag-right.png">
+                        </div>
+                        <div class="message-main-block">
+                            <p class="message-title pb10">＠miyu_○○○　さん</p>
+                            <p class="message-content">二人の子育てに追われ、自分の自由時間はほとんどなく、ストレスが溜まっていく毎日。夫は帰りが遅いので話す時間もなく、愚痴を言うことすら出来ずにいました。こちらでたくさん褒めていただいたことで自信が持てました！明日からまた頑張ろうと思えました。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="voice-block voice-left">
+                    <div class="voice-message">
+                        <div class="message-main-block">
+                            <p class="message-title pb10">＠hsi_12○○○　さん</p>
+                            <p class="message-content">                            
+                                小学生の子供がおり、くじ引きで学校の役員を引き受けることになりました(+_+) 
+                                想像以上に仕事が多く大変なのと、役員同士の人間関係もなかなかややこしく苦戦しています。
+                                断れない性格なので、忙しそうな方の仕事まで引き受けてしまう始末。
+                                そんな私の性格をとことん褒めてくださってすごく自信がつきました！この度はありがとうございました！ 
+                            </p>
+                        </div>
+                        <div class="message-tag-left">
+                            <img src="./images/top/message-tag-left.png">
+                        </div>
+                    </div>
+                    <div class="voice-face">
+                        <img src="./images/top/voice_person2.png">
+                    </div>
+                </div>
+                <div class="voice-block voice-right">
+                    <div class="voice-face">
+                        <img src="./images/top/voice_person2.png">
+                    </div>
+                    <div class="voice-message">
+                        <div class="message-tag-right">
+                            <img src="./images/top/message-tag-right.png">
+                        </div>
+                        <div class="message-main-block">
+                            <p class="message-title pb10">＠hayato○○○　さん</p>
+                            <p class="message-content">
+                                会社の為に一生懸命がんばっているのに誰も評価してくれません。
+                                上司は仕事まるなげでほっとかれることが多くやりがいが感じられませんでした。
+                                落ち込んだ時にたまに電話して勇気をもらってます。
+                                どんな仕事でも誰かの役に立ってるって教えてくれてもう少しがんばろうと思わせてくれました！
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="voice-block voice-left">
+                    <div class="voice-message">
+                        <div class="message-main-block">
+                            <p class="message-title pb10">＠3577_ko○○○　さん</p>
+                            <p class="message-content">
+                            半年前にダイエットを決意し、ホットヨガと食事制限、
+                            ウォーキングを続けて約5キロ体重を落としました。ですが…誰にも気づいてもらえず(T_T)
+                            自分としては満足しているのですが、
+                            何か物足りない気持ちもあり…こんな事で自慢するのも恥ずかしかったのですが、
+                            半年間の努力を沢山褒めてもらいとても嬉しかったです！
+                            </p>
+                        </div>
+                        <div class="message-tag-left">
+                            <img src="./images/top/message-tag-left.png">
+                        </div>
+                    </div>
+                    <div class="voice-face">
+                        <img src="./images/top/voice_person2.png">
+                    </div>
+                </div>
+                <div class="voice-block voice-right">
+                    <div class="voice-face">
+                        <img src="./images/top/voice_person2.png">
+                    </div>
+                    <div class="voice-message">
+                        <div class="message-tag-right">
+                            <img src="./images/top/message-tag-right.png">
+                        </div>
+                        <div class="message-main-block">
+                            <p class="message-title pb10">＠satoto3○○○　さん</p>
+                            <p class="message-content">
+                                ママだってほめてもらいたい！子供のことはほめるけれど、誰も私のことをほめてはくれません。
+                                毎日の家事育児が当たり前だと思われてる！
+                                大人になっても、親になってもやっぱりほめられれば嬉しいものです。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="voice-block voice-left">
+                    <div class="voice-message">
+                        <div class="message-main-block">
+                            <p class="message-title pb10">＠yuu_○○○　さん</p>
+                            <p class="message-content">
+                                中学受験した息子が無事希望校に合格することが出来ました。
+                                ４年生の時から頑張ってきて、私も親としてずっと寄り添いサポートしてきました。
+                                自分が受験するのか！？というくらい一緒に勉強もしましたし、叱咤激励の毎日でした。
+                                息子のことはたくさん褒めたのですが、自分のことも誰かに褒めてもらいたくて(笑)  
+                                こちらを利用させてもらいました。スタッフさんがとても優しく丁寧に話を聞いて下さり、
+                                元気になる言葉をたくさん掛けてくれました！
+                            </p>
+                        </div>                    
+                        <div class="message-tag-left">
+                            <img src="./images/top/message-tag-left.png">
+                        </div>
+                    </div>
+                    <div class="voice-face">
+                        <img src="./images/top/voice_person2.png">
+                    </div>
+                </div>
+                <div class="voice-block voice-right">
+                    <div class="voice-face">
+                        <img src="./images/top/voice_person2.png">
+                    </div>
+                    <div class="voice-message">
+                        <div class="message-tag-right">
+                            <img src="./images/top/message-tag-right.png">
+                        </div>
+                        <div class="message-main-block">
+                            <p class="message-title pb10">＠sakai03○○○　さん</p>
+                            <p class="message-content">
+                                パート先の上司と折り合いが悪く、仕事へ行くのが憂鬱な毎日です。                        
+                                人間関係をがんばってることを褒めてもらって少しアドバイスもありがとうございました。
+                                背中を押してもらったので、一歩前へ進めそうです。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="voice-block voice-left sp-invisible">
+                    <div class="voice-message">
+                        <div class="message-main-block">
+                            <p class="message-title pb10">＠junichi○○○　さん</p>
+                            <p class="message-content">
+                                仕事で大事な商談や打ち合わせがある前によく利用してます。
+                                商談の準備していることや仕事に対しての姿勢をほめてもらえると力が発揮できます！
+                                これだけ準備したんだから必ずうまくいきますよって言われただけで不安がなくなる！
+                            </p>
+                        </div>
+                        <div class="message-tag-left">
+                            <img src="./images/top/message-tag-left.png">
+                        </div>
+                    </div>
+                    <div class="voice-face">
+                        <img src="./images/top/voice_person2.png">
+                    </div>
+                </div>
+                <div class="voice-block voice-right sp-invisible">
+                    <div class="voice-face">
+                        <img src="./images/top/voice_person2.png">
+                    </div>
+                    <div class="voice-message">
+                        <div class="message-tag-right">
+                            <img src="./images/top/message-tag-right.png">
+                        </div>
+                        <div class="message-main-block">
+                            <p class="message-title pb10">＠777mi○○○　さん</p>
+                            <p class="message-content">
+                                この度はありがとうございました。0歳のこどもを育児中です。
+                                毎日子育て一色、社会からの疎外感を覚え不安になっていました。
+                                やってる育児もあってるかどうかわからなくて･･･
+                                スタッフさんが子育てをやりきった方だったのですごく元気もらえましたし色々教えてもらえました！
+                                今の私をほめて認めて下さり、すごく気持ちが楽になりました。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-footer">
+            <div>copyright  homeme. All Rights Reserved.</div>            
+        </section>
+    </article>
+</body>
+</html>
