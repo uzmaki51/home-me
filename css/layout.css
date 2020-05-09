@@ -27,7 +27,9 @@ body {
 }
 
 #section-body .header {
-    position: absolute;
+    position: fixed;
+    max-width: 1280px;
+    z-index: 9999;
     width: 100%;
 }
 
@@ -35,7 +37,7 @@ body {
     padding-bottom: 100px;
     background: #ffd776;
     position: relative;
-    height: 80vh;
+    height: 825px;
 }
 
 #section-body-top .header {
@@ -998,10 +1000,10 @@ body {
 ---------------------------*/
 
 .sidenav {
-    height: 80vh;
+    height: 200vh;
     width: 0;
     position: absolute;
-    z-index: 10000;
+    z-index: 99999;
     /*top: 0;*/
     left: 0;
     background-color: #6d4b35;
@@ -1096,9 +1098,6 @@ body {
     }
     .stuff-img-group .stuff-block {
         width: 100%;
-    }
-    .sp-invisible {
-        display: none;
     }
     .person-dot {
         background-image: url(../images/common/dot.png);
@@ -1196,6 +1195,7 @@ body {
     }
     #section-body-top {
         padding-bottom: 150px;
+        height: 800px;
     }
     .top-logo-1 span {
         letter-spacing: 0em;
@@ -1225,9 +1225,6 @@ body {
     #section-stuff .special-comment {
         font-size: 1.0em;
         width: 90%;
-    }
-    .sidenav {
-        height: 845px;
     }
 }
 
@@ -1261,6 +1258,7 @@ body {
     }
     #section-body-top {
         padding-bottom: 150px;
+        height: 800px;
     }
     .top-logo-1 span {
         letter-spacing: 0em;
@@ -1307,14 +1305,10 @@ body {
         top: -40%;
     }
     .sidenav {
-        height: 80vh;
         width: 0;
     }
     .text-break {
         display: block;
-    }
-    .stuff-img-group .stuff-block {
-        display: flex;
     }
     .stuff-img-group .stuff-block .person-img {
         width: auto;
@@ -1325,6 +1319,9 @@ body {
     }
     .stuff-img-group .stuff-block .person-img img {
         display: inline-flex;
+    }
+    .stuff-img-group .stuff-block.sp-invisible {
+        display: none;
     }
     .price-group {
         flex-direction: column;
@@ -1419,6 +1416,7 @@ body {
     }
     #section-body-top {
         padding-bottom: 0px;
+        height: 85vh;
     }
     .nav-btn {
         margin: 0;
@@ -1557,9 +1555,6 @@ body {
     }
     .contact-line {
         font-size: 0.8em;
-    }
-    .sidenav {
-        height: 90vh;
     }
     .sidenav .closebtn {
         right: 10px;
@@ -1701,9 +1696,6 @@ body {
     }
     #section-footer {
         padding: 30px 80px;
-    }
-    .sidenav {
-        height: 70vh;
     }
     #section-about .page-title {
         padding-top: 100px;
