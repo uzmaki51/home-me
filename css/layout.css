@@ -419,7 +419,7 @@ body {
 
 #section-about {
     background: #fff6f4;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 #section-about .title-1 {
@@ -657,6 +657,7 @@ body {
 }
 
 .stuff-block .person-info {
+    width: 60%;
     float: right;
 }
 
@@ -1069,7 +1070,13 @@ body {
     }
     #section-top-menu {
         display: block;
-        margin-top: -6px;
+        height: 65px;
+        position: fixed;
+        width: 100%;
+        z-index: 99999;
+    }
+    #section-body-top .top-logo-back {
+        content: url("../images/header-4-sp.png");
     }
     .sp-btn-reservation,
     .sp-btn-question {
@@ -1083,7 +1090,7 @@ body {
         color: #ffffff;
         font-weight: bold;
         float: left;
-        line-height: 40px;
+        line-height: 30px;
     }
     .sp-btn-question {
         float: right;
@@ -1117,6 +1124,7 @@ body {
         border-radius: 30px;
         margin: auto;
         padding: 20px;
+        margin-top: 50px;
     }
     .stuff-members-title {
         width: 70%;
@@ -1233,10 +1241,10 @@ body {
         width: 90%;
     }
     .service-no {
-        transform: translate(20%, -15%);
+        /*transform: translate(20%, -15%);*/
     }
     .main-title {
-        padding-bottom: 65px;
+        padding-bottom: 95px;
         width: 90%;
     }
     .main-comment,
@@ -1287,7 +1295,7 @@ body {
     #section-price .price-purchase,
     #section-price .price-button {
         display: inline;
-        margin-left: 20px;
+        margin-left: 30px;
         font-size: 1.0em;
     }
     #section-price .price-time {
@@ -1309,6 +1317,9 @@ body {
     }
     .text-break {
         display: block;
+    }
+    .stuff-img-group .stuff-block .person-info {
+        width: 75%;
     }
     .stuff-img-group .stuff-block .person-img {
         width: auto;
@@ -1332,6 +1343,30 @@ body {
         margin: auto;
         height: 130px;
     }
+    #section-stuff .person-contact {
+        font-size: 1.1em;
+        padding-bottom: 5px;
+    }
+    #section-stuff .person-comment {
+        font-size: 1.1em;
+        padding-top: 5px;
+        letter-spacing: 0.15em;
+    }
+    #section-stuff .person-name {
+        font-size: 1.1em;
+    }
+    .price-comment {
+        font-size: 1.1em;
+    }
+    .service-img .small-title .service-comment {
+        font-size: 1.1em;
+    }
+    .about-block p {
+        font-size: 1.1em;
+    }
+    .service-block p {
+        font-size: 1.1em;
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -1349,10 +1384,11 @@ body {
         flex-direction: row;
     }
     .main-title {
-        font-size: 1.7em;
+        font-size: 1.5em;
         padding-bottom: 30px;
         transform: translate(-50%, -85%);
         width: 100%;
+        letter-spacing: 0.1em;
     }
     .qualif {
         width: 90%;
@@ -1390,11 +1426,14 @@ body {
         letter-spacing: 0.1em;
     }
     .logo-1 {
-        font-size: 1.0em;
-        letter-spacing: 0.1em;
-        width: 70%;
+        font-size: 0.9em;
+        letter-spacing: 0.0em;
+        width: 80%;
         margin: auto;
         text-align: center;
+    }
+    .logo-2 img {
+        transform: scale(0.8);
     }
     .top-logo-1 span {
         font-size: 1.4em;
@@ -1419,8 +1458,11 @@ body {
         height: 85vh;
     }
     .nav-btn {
-        margin: 0;
-        transform: scale(0.8);
+        margin: -5px;
+        transform: scale(0.7);
+    }
+    #section-about .main-comment-3 {
+        font-size: 0.9em;
     }
     .about-img-group {
         grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
@@ -1447,21 +1489,36 @@ body {
     }
     .service-img-group .service-img .big-title {
         margin-top: 0;
-        font-size: 1.5em;
+        font-size: 1.4em;
+        letter-spacing: 0.1em;
     }
     .service-block {
         padding: 20px 30px;
     }
+    .service-block p {
+        letter-spacing: 0.05em;
+        font-size: 0.7em;
+    }
     #section-about .page-title {
-        padding-top: 100px;
+        padding-top: 50px;
     }
     .service-no {
-        transform: translate(20%, 0%);
+        transform: translate(20%, -30%);
+    }
+    .service-no p {
+        padding: 15px;
     }
     #section-stuff .main-comment-3 {
         letter-spacing: 0.1em;
         width: 90%;
-        font-size: 1.0em;
+        font-size: 0.9em;
+    }
+    #section-stuff .stuff-img-group .stuff-block .person-img {
+        width: 20%;
+        margin-left: 0;
+    }
+    #section-stuff .stuff-block .person-info {
+        width: 75%;
     }
     .price-group {
         width: 90%;
@@ -1477,7 +1534,8 @@ body {
         font-size: 1.1em;
     }
     .price-block {
-        height: 100px;
+        height: 60px;
+        width: 100%;
     }
     .price-purchase-line {
         width: 60%;
@@ -1495,13 +1553,15 @@ body {
         border-radius: 10px;
     }
     #section-price .price-try {
-        top: -50%;
+        top: -90%;
     }
     .price-comment {
         padding: 0 0 50px 0;
     }
     .stuff-members-title {
-        letter-spacing: 0.1em;
+        width: 100%;
+        letter-spacing: 0.01em;
+        font-size: 0.9em;
     }
     .voice-block {
         height: auto;
@@ -1584,11 +1644,37 @@ body {
     .voice-left .voice-message .message-main-block {
         width: 70%;
     }
+    #section-stuff .stuff-btn {
+        padding: 5px;
+        margin-top: 0;
+    }
+    #section-stuff .person-contact {
+        font-size: 0.85em;
+        padding-bottom: 5px;
+    }
+    #section-stuff .person-comment {
+        font-size: 0.85em;
+        padding-top: 5px;
+    }
+    #section-stuff .person-name {
+        font-size: 0.9em;
+    }
 }
 
 @media screen and (max-width:420px) {
+    .logo-1 {
+        font-size: 0.7em;
+        letter-spacing: 0.0em;
+    }
     .about-img-group .about-img .big-title {
         font-size: 1.4em;
+    }
+    .service-no {
+        transform: translate(20%, -25%);
+    }
+    .service-img .small-title .service-comment {
+        font-size: 0.75em;
+        letter-spacing: 0.15em;
     }
     .about-img-group .about-img .small-title {
         font-size: 0.7em;
@@ -1597,13 +1683,11 @@ body {
         width: 90%;
         padding: 20px 10px;
     }
-    .service-no {
-        transform: translate(20%, 10%);
-    }
     #section-stuff .main-comment-3 {
         letter-spacing: 0.0em;
         width: 90%;
-        font-size: 0.8em;
+        font-size: 0.75em;
+        padding-top: 0;
     }
     .price-value {
         font-size: 1.3em;
@@ -1624,16 +1708,34 @@ body {
         padding: 10px 5px 0px 10px;
     }
     #section-about .page-title {
-        padding-top: 100px;
+        padding-top: 50px;
     }
-    .stuff-img-group .stuff-block .person-img {
-        width: 30%;
+    #section-stuff .stuff-members-cnt {
+        letter-spacing: 0.05em;
+    }
+    #section-stuff .person-name {
+        font-size: 0.7em;
+    }
+    #section-stuff .stuff-block .person-info {
+        width: 75%;
+    }
+    #section-stuff .person-contact {
+        font-size: 0.7em;
+        padding-bottom: 5px;
+    }
+    #section-stuff .person-comment {
+        font-size: 0.7em;
+        padding-top: 5px;
     }
 }
 
 @media screen and (max-width:375px) {
     #section-body-top {
         height: 70vh;
+    }
+    .main-title {
+        font-size: 1.4em;
+        letter-spacing: 0.05em;
     }
     .voice-face img {
         transform: scale(1.0);
@@ -1670,12 +1772,12 @@ body {
         font-size: 1.2em;
     }
     .top-logo-2 span {
-        letter-spacing: 0.15em;
-        font-size: 2.0em;
+        letter-spacing: 0.1em;
+        font-size: 2.5em;
     }
-    #section-stuff .main-title {
-        font-size: 1.1em;
-        width: 100%;
+    .service-img .small-title .service-comment {
+        font-size: 0.75em;
+        letter-spacing: 0.015em;
     }
     .price-try {
         left: 5%;
@@ -1695,10 +1797,7 @@ body {
         letter-spacing: 0em;
     }
     #section-footer {
-        padding: 30px 80px;
-    }
-    #section-about .page-title {
-        padding-top: 100px;
+        padding: 30px 80px 95px;
     }
     .about-img-group .about-img .big-title {
         font-size: 1.2em;
@@ -1717,6 +1816,17 @@ body {
     }
     .voice-right .voice-message {
         width: 100%;
+    }
+    #section-stuff .person-contact {
+        font-size: 0.65em;
+        padding-bottom: 5px;
+    }
+    #section-stuff .person-comment {
+        font-size: 0.65em;
+        padding-top: 5px;
+    }
+    #section-stuff .main-comment-3 {
+        font-size: 0.7em
     }
 }
 
