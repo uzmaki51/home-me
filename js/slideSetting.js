@@ -1,10 +1,10 @@
-$(document).ready(function(){
-  $('.slider01').bxSlider({
-    mode: 'fade',
-    pager: true,
-    controls: false,
-    auto: true,
-    speed: 1500,
-    pause: 5000, 
-  });
-});
+$(function() {
+    if(window.innerWidth <= 1000) {
+        var top_menu_height = $('#section-top-menu').height();
+        var main_height = window.innerHeight;
+        $('#section-top-menu').css('top', (main_height - top_menu_height) + 'px');
+    }
+})
+function showMore() {
+    $('.sp-invisible').css('display', 'flex');
+}

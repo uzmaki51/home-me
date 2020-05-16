@@ -624,6 +624,7 @@ body {
 
 #section-voice .page-title {
     padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 #section-price .page-title img {
@@ -884,11 +885,8 @@ body {
 
 .voice-left .voice-face {
     height: 164px;
-    position: absolute;
     width: 167px;
-    top: 50%;
-    right: 0;
-    transform: translate(0%, -50%);
+    margin: auto;
 }
 
 .voice-left .voice-message {
@@ -1303,14 +1301,15 @@ body {
     }
     #section-price .price-try {
         position: absolute;
-        width: 220px;
-        height: 44px;
+        width: 140px;
+        height: 30px;
         margin: auto;
         transform: none;
         background-image: url(../images/top/try-sp.png);
         background-repeat: no-repeat;
-        left: 5%;
-        top: -40%;
+        background-size: contain;
+        left: 30px;
+        top: -50%;
     }
     .sidenav {
         width: 0;
@@ -1356,7 +1355,7 @@ body {
         font-size: 1.1em;
     }
     .price-comment {
-        font-size: 1.1em;
+        font-size: 0.9em;
     }
     .service-img .small-title .service-comment {
         font-size: 1.1em;
@@ -1385,22 +1384,27 @@ body {
     }
     .main-title {
         font-size: 1.5em;
-        padding-bottom: 30px;
+        padding-bottom: 40px;
         transform: translate(-50%, -85%);
         width: 100%;
         letter-spacing: 0.1em;
     }
+    .page-title img {
+        padding: 10px;
+    }
     .qualif {
         width: 90%;
+        border-radius: 10px;
     }
     .qualif-title {
-        padding: 50px 10px;
+        width: 40%;
     }
     .qualif-comment {
         padding: 25px 10px;
     }
     #section-footer {
-        padding: 30px 90px;
+        padding: 20px;
+        font-size: 14px;
     }
     .qa-body {
         padding: 10px;
@@ -1414,8 +1418,8 @@ body {
         margin-left: 0;
     }
     .philo-title {
-        font-size: 1.2em;
-        letter-spacing: 0em;
+        font-size: 0.9em;
+        letter-spacing: 0.2em;
         line-height: 2.0em;
     }
     .contact-line {
@@ -1433,7 +1437,7 @@ body {
         text-align: center;
     }
     .logo-2 img {
-        transform: scale(0.8);
+        transform: scale(0.6);
     }
     .top-logo-1 span {
         font-size: 1.4em;
@@ -1479,7 +1483,7 @@ body {
         font-size: 1.4em;
     }
     .service-img-group .service-img img {
-        width: 40%;
+        width: 48%;
         transform: scale(1.0);
         margin: auto;
     }
@@ -1489,7 +1493,7 @@ body {
     }
     .service-img-group .service-img .big-title {
         margin-top: 0;
-        font-size: 1.4em;
+        font-size: 1.2em;
         letter-spacing: 0.1em;
     }
     .service-block {
@@ -1553,7 +1557,7 @@ body {
         border-radius: 10px;
     }
     #section-price .price-try {
-        top: -90%;
+        top: -50%;
     }
     .price-comment {
         padding: 0 0 50px 0;
@@ -1570,26 +1574,27 @@ body {
     .voice-right .voice-face {
         display: contents;
     }
+    .voice-left .voice-face {
+        display: contents;
+    }
     .voice-right .message-content {
         padding: 10px 10px 0px 20px;
         display: -webkit-box;
         max-width: 100%;
-        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
-        font-size: 0.8em;
+        font-size: 0.6em;
         letter-spacing: 0.05em;
     }
     .voice-left .message-content {
         padding: 10px 10px 0px 10px;
         display: -webkit-box;
         max-width: 100%;
-        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
-        font-size: 0.8em;
+        font-size: 0.6em;
         letter-spacing: 0.05em;
     }
     .voice-right .message-title,
@@ -1603,12 +1608,15 @@ body {
     }
     .voice-message .message-main-block {
         padding-bottom: 15px;
+        border-radius: 20px!important;
     }
     .voice-right .voice-face img {
-        transform: scale(0.7);
+        width: 80px;
+        height: 80px;
     }
     .voice-left .voice-face img {
-        transform: scale(0.7);
+        width: 80px;
+        height: 80px;
     }
     .voice-left .voice-face {
         transform: translate(25%, -50%);
@@ -1642,7 +1650,7 @@ body {
         font-size: 1.3em;
     }
     .voice-left .voice-message .message-main-block {
-        width: 70%;
+        float: left;
     }
     #section-stuff .stuff-btn {
         padding: 5px;
@@ -1661,7 +1669,7 @@ body {
     }
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:425px) {
     .logo-1 {
         font-size: 0.7em;
         letter-spacing: 0.0em;
@@ -1727,6 +1735,56 @@ body {
         font-size: 0.7em;
         padding-top: 5px;
     }
+    .voice-left .message-tag-left {
+        margin-top: 50px;
+    }
+    .voice-right .message-tag-right {
+        margin-top: 50px;
+        z-index: 99;
+    }
+    .voice-right .message-tag-right img {
+        width: 20px;
+    }
+    .voice-left .message-tag-left img {
+        width: 20px;
+    }
+    .voice-right .voice-face img {
+        margin-top: 18px;
+    }
+    .voice-left .voice-face img {
+        margin-top: 18px;
+    }
+    .group-philo {
+        margin-top: 45px;
+    }
+    .philo-text li {
+        font-size: 0.9em;
+    }
+    .main-comment-3 {
+        font-size: 0.8em;
+        padding-bottom: 50px!important;
+    }
+    #section-body2 {
+        padding-top: 50px;
+    }
+    .main-comment, .comment {
+        font-size: 0.8em;
+        letter-spacing: 0;
+    }
+    .main-comment-2 ul li {
+        font-size: 14px;
+    }
+    .qualif-title {
+        width: 40%;
+        padding: 45px 0;
+        font-size: 0.8em;
+    }
+    .qualif-comment li {
+        font-size: 0.8em;
+    }
+    .question-btn {
+        padding-bottom: 80px;
+    }
 }
 
 @media screen and (max-width:375px) {
@@ -1744,19 +1802,14 @@ body {
         transform: translate(-5%, 20%);
     }
     .voice-left .message-tag-left {
-        transform: translate(5%, 0%);
-        margin-left: -5px;
+        margin-top: 50px;
     }
     .voice-left .voice-message {
         width: 70%;
-        margin-left: -10px;
-    }
-    .voice-left .voice-face img {
-        transform: scale(0.7);
     }
     .voice-right .message-title,
     .voice-left .message-title {
-        font-size: 0.8em;
+        font-size: 0.6em;
     }
     #section-about .title-1 {
         font-size: 1.3em;
@@ -1766,7 +1819,7 @@ body {
     }
     .sp-btn-reservation,
     .sp-btn-question {
-        font-size: 1.1em;
+        font-size: 0.9em;
     }
     .top-logo-1 span {
         font-size: 1.2em;
@@ -1776,7 +1829,7 @@ body {
         font-size: 2.5em;
     }
     .service-img .small-title .service-comment {
-        font-size: 0.75em;
+        font-size: 0.6em;
         letter-spacing: 0.015em;
     }
     .price-try {
@@ -1784,10 +1837,12 @@ body {
         top: -60%;
     }
     .qualif-title {
-        font-size: 1.0em;
+        width: 40%;
+        padding: 45px 0;
+        font-size: 0.8em;
     }
     .qualif-comment li {
-        font-size: 1.0em;
+        font-size: 0.8em;
         letter-spacing: 0.1em;
     }
     .qa-title {
@@ -1797,7 +1852,9 @@ body {
         letter-spacing: 0em;
     }
     #section-footer {
-        padding: 30px 80px 95px;
+        padding: 20px;
+        font-size: 12px;
+
     }
     .about-img-group .about-img .big-title {
         font-size: 1.2em;
@@ -1816,6 +1873,7 @@ body {
     }
     .voice-right .voice-message {
         width: 100%;
+        margin-left: 5px;
     }
     #section-stuff .person-contact {
         font-size: 0.65em;
@@ -1828,11 +1886,92 @@ body {
     #section-stuff .main-comment-3 {
         font-size: 0.7em
     }
+    .voice-right .message-tag-right {
+        margin-top: 50px;
+        z-index: 99;
+    }
+
+    .voice-right .message-tag-right img {
+        width: 20px;
+    }
+    .voice-left .message-tag-left img {
+        width: 20px;
+    }
+    .voice-right .voice-face img {
+        margin-top: 18px;
+    }
+    .voice-left .voice-face img {
+        margin-top: 18px;
+    }
+    .main-comment, .comment {
+        letter-spacing: 0.1em;
+    }
 }
 
 @media screen and (max-width:320px) {
+    .main-title {
+        padding-bottom: 30px;
+    }
     .sidenav a {
         font-size: 0.8em;
         padding: 10px 5px 10px 0px;
+    }
+    .about-img-group .about-img .big-title {
+        font-size: 1.0em;
+
+    }
+    .about-img-group .about-img .small-title {
+        font-size: 0.5em;
+    }
+    .about-block p {
+        font-size: 0.6em;
+    }
+    .service-no p {
+        margin: 100px -25px;
+    }
+    .stuff-members-title {
+        font-size: 0.8em;
+    }
+    .voice-right .message-tag-right {
+        margin-top: 50px;
+        z-index: 99;
+    }
+
+    .voice-right .message-tag-right img {
+        width: 20px;
+    }
+    .voice-left .message-tag-left img {
+        width: 20px;
+    }
+    .voice-right .voice-face img {
+        margin-top: 18px;
+    }
+    .voice-left .voice-face img {
+        margin-top: 18px;
+    }
+    .philo-title {
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+    }
+    .philo-text li {
+        font-size: 0.8em;
+    }
+    #section-footer {
+        font-size: 12px;
+    }
+    .main-comment-2 ul li {
+        font-size: 12px;
+    }
+    .main-comment, .comment {
+        letter-spacing: 0;
+    }
+    .qualif-title {
+        width: 40%;
+        padding: 45px 0;
+        font-size: 0.75em;
+    }
+    .qualif-comment li {
+        font-size: 0.75em;
+        letter-spacing: 0;
     }
 }
